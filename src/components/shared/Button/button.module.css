@@ -1,0 +1,28 @@
+.button {
+    height: var(--button-medium);
+    border: none;
+    border-radius: var(--borderRadius);
+    background: var(--primary-color);
+    color: var(--white);
+    font-weight: 600;
+    font-size: inherit;
+    cursor: pointer;
+
+    &:hover {
+        background: var(--secondary-color);
+    }
+
+    &:focus {
+        outline: 2px solid var(--secondary-color);
+    }
+}
+
+.disabled {
+    background: var(--disabled);
+    outline: none;
+    cursor: not-allowed;
+
+    &:hover {
+        background: var(--disabled)
+    }
+}

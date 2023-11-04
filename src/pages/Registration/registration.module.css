@@ -1,0 +1,46 @@
+.registration {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+
+    /* Background */
+    background: linear-gradient(75deg, #d7d2d2, #fcfcfc);
+    background-size: 400% 400%;
+    -webkit-animation: back 20s ease infinite;
+    -moz-animation: back 20s ease infinite;
+    animation: back 20s ease infinite;
+
+
+    .form {
+        height: 216px;
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .title {
+        text-transform: uppercase;
+    }
+
+
+    @-webkit-keyframes back {
+        0%{background-position:0% 68%}
+        50%{background-position:100% 33%}
+        100%{background-position:0% 68%}
+    }
+    @-moz-keyframes back {
+        0%{background-position:0% 68%}
+        50%{background-position:100% 33%}
+        100%{background-position:0% 68%}
+    }
+    @keyframes back {
+        0%{background-position:0% 68%}
+        50%{background-position:100% 33%}
+        100%{background-position:0% 68%}
+    }
+}
